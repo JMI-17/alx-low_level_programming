@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
  * main - Entry point of the program
- * 
+ * This line defines the main function
+ * This line uses the printf function to print the size of the'char,int,long int,long long int
+ * float'
  * Return: Always 0 (success)
  */
 int main(void)
