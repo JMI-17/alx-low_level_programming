@@ -2,8 +2,10 @@
 /**
 * main - Entry point
 *
-* Description: Prints all possible combinations of single-digit numbers.
-* Numbers are separated by a comma and a space, printed in ascending order.
+* Description:
+* Prints all possible combinations of single-digit numbers.
+* Numbers are separated by a comma and a space,
+* printed in ascending order.
 * Uses the putchar function a maximum of four times.
 *
 * Return: Always 0 (Success)
@@ -23,6 +25,6 @@ putchar(' ');
 }
 }
 }
-putchar('\n'); // To end the line
+putchar('\n');
 return (0);
 }
