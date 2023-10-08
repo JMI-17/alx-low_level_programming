@@ -4,9 +4,9 @@
 *
 * Description:
 * Prints all possible different combinations of two digits.
-* Numbers are separated by a comma and a space, printed in 
+* Numbers are separated by a comma and a space, printed in
 * ascending order.
-* The two digits must be different, and 01 and 10 are considered 
+* The two digits must be different, and 01 and 10 are considered
 * the same combination.
 * Uses the putchar function a maximum of five times.
 *
