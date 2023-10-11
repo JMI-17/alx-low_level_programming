@@ -9,15 +9,21 @@
  */
 int main(void)
 {
-int n;
-n = 98;
-print_sign(n);
+int r;
+r = print_sign(98);
+if (r < 0)
+r *= -1;
+_putchar(r + '0');
 _putchar('\n');
-n = 0;
-print_sign(n);
+r = print_sign(0);
+if (r < 0)
+r *= -1;
+_putchar(r + '0');
 _putchar('\n');
-n = -12;
-print_sign(n);
+r = print_sign(-12);
+if (r < 0)
+r *= -1;
+_putchar(r + '0');
 _putchar('\n');
 return (0);
 }
