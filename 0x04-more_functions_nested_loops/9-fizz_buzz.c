@@ -1,24 +1,30 @@
-#include "main.h"
-/**
-* print_triangle - Print a right-angled triangle of '#' characters
-* @size: The size of the triangle
-*/
-void print_triangle(int size)
+#include <stdio.h>
+int main(void)
 {
-if (size <= 0)
+int i;
+for (i = 1; i <= 100; i++)
 {
-_putchar('\n');
+if (i % 3 == 0 && i % 5 == 0)
+{
+printf("FizzBuzz");
+}
+else if (i % 3 == 0)
+{
+printf("Fizz");
+}
+else if (i % 5 == 0)
+{
+printf("Buzz");
 }
 else
 {
-int i, j;
-for (i = 1; i <= size; i++)
+printf("%d", i);
+}
+if (i < 100)
 {
-for (j = 1; j <= i; j++)
-{
-_putchar('#');
-}
-_putchar('\n');
+printf(" ");
 }
 }
+printf("\n");
+return 0;
 }
