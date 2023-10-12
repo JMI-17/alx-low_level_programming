@@ -1,23 +1,21 @@
 #include "main.h"
 /**
- * print_numbers_10 - Print numbers from 0 to 14, each repeated 10 times
- */
-void print_numbers_10(void)
+* more_numbers –
+* Print numbers from 0 to 14 ten times each
+*/
+void more_numbers(void)
 {
-char digit;
-int i;
-for (i = 0; i < 10; i++) // Print each number 10 times
+int i, num;
+for (i = 0; i < 10; i++)
 {
-digit = '0';
-while (digit <= '9')
+for (num = 0; num <= 14; num++)
 {
-_putchar(digit);
-digit++;
+if (num > 9)
+{
+_putchar(num / 10 + '0');
 }
-for (digit = '0'; digit <= '4'; digit++)
-{
-_putchar(digit);
-}
+_putchar(num % 10 + '0');
 }
 _putchar('\n');
+}
 }
