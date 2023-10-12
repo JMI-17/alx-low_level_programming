@@ -1,9 +1,8 @@
 #include "main.h"
 /**
-* Description- print_most_numbers - Prints numbers
-* from 0 to 9 (excluding 2 and 4).
-* This function iterates through numbers and prints them,
-* excluding 2 and 4.
+* print_most_numbers - Prints numbers from 0 to 9 (excluding 2 and 4).
+*
+* This function iterates through numbers and prints them, excluding 2 and 4.
 */
 void print_most_numbers(void)
 {
@@ -18,4 +17,3 @@ digit++;
 }
 _putchar('\n');
 }
-
