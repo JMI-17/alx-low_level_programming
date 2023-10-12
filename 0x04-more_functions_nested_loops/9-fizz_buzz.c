@@ -1,4 +1,13 @@
 #include <stdio.h>
+/**
+ * main - Entry point for the Fizz-Buzz program
+ *
+ * This function prints numbers from 1 to 100 according to the Fizz-Buzz rules.
+ * Multiples of 3 are replaced with "Fizz," multiples of 5 with "Buzz," and
+ * multiples of both 3 and 5 with "FizzBuzz."
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 int i;
