@@ -5,13 +5,11 @@
 * Description:
 * This program prints numbers from 1 to 100, applying the
 * Fizz-Buzz rules. It prints "Fizz" for multiples of 3,
-* "Buzz" for multiples
-* of 5, and "FizzBuzz" for multiples of both, otherwise,
+* "Buzz" for multiples of 5, and "FizzBuzz" for multiples of both, otherwise,
 * it prints the number.
-*
 * Return: 0 (Success)
 */
-int main() {
+int main(void) {
 for (int i = 1; i <= 100; i++) {
 if (i % 3 == 0 && i % 5 == 0) {
 printf("FizzBuzz ");
@@ -24,5 +22,5 @@ printf("%d ", i);
 }
 }
 printf("\n");
-return 0;
+return (0);
 }
