@@ -3,19 +3,13 @@
 #include <time.h>
 
 /**
- * main - Entry point of the program
- *
- * Description: This function generates a random number and
- * determines if it's positive, zero, or negative.
+ * positive_or_negative - Determines if a number is positive, zero, or negative.
+ * @n: The number to be evaluated
  *
  * Return: Always 0 (success)
  */
-int positive_or_negative()
+int positive_or_negative(int n)
 {
-    int n;
-
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
     printf("%d is ", n);
 
     if (n > 0)
@@ -33,3 +27,4 @@ int positive_or_negative()
 
     return (0);
 }
+
