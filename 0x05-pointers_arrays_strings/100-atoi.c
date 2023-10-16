@@ -9,21 +9,25 @@
 int _atoi(char *s)
 {
 int result = 0;
-int sign = 1; 
+int sign = 1;
 while (*s)
 {
 if (*s == '-')
 {
 sign *= -1;
-} else if (*s >= '0' && *s <= '9')
+}
+else if (*s >= '0' && *s <= '9')
 {
 int digit = *s - '0';
-if ((sign == 1 && (result > INT_MAX / 10 || (result == INT_MAX / 10 && digit > INT_MAX % 10))) ||
-(sign == -1 && (result < INT_MIN / 10 || (result == INT_MIN / 10 && digit > -(INT_MIN % 10))))){
+if ((sign == 1 && (result > INT_MAX / 10 
+|| (result == INT_MAX / 10 && digit > INT_MAX % 10)))
+|| (sign == -1 && (result < INT_MIN / 10
+|| (result == INT_MIN / 10 && digit > -(INT_MIN % 10))))){
 return (sign == 1) ? INT_MAX : INT_MIN;
 }
 result = result * 10 + digit;
-} else if (result != 0)
+}
+else if (result != 0)
 {
 break;
 }
