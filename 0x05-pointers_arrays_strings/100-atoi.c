@@ -19,10 +19,11 @@ sign *= -1;
 else if (*s >= '0' && *s <= '9')
 {
 int digit = *s - '0';
-if ((sign == 1 && (result > INT_MAX / 10 
+if ((sign == 1 && (result > INT_MAX / 10
 || (result == INT_MAX / 10 && digit > INT_MAX % 10)))
 || (sign == -1 && (result < INT_MIN / 10
-|| (result == INT_MIN / 10 && digit > -(INT_MIN % 10))))){
+|| (result == INT_MIN / 10 && digit > -(INT_MIN % 10)))))
+{
 return (sign == 1) ? INT_MAX : INT_MIN;
 }
 result = result * 10 + digit;
@@ -33,5 +34,5 @@ break;
 }
 s++;
 }
-return result * sign;
+return (result * sign);
 }
