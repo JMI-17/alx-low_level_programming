@@ -1,23 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define PASSWORD_LENGTH 277
-#define KEY_SUM 2772
+#define PASSWORD_LENGTH 15
 int main(void)
 {
-int i;
-int random;
-int current_sum;
 char password[PASSWORD_LENGTH + 1];
 srand(time(0));
-for (i = 0, current_sum = 0; i < PASSWORD_LENGTH - 1; i++)
+for (int i = 0; i < PASSWORD_LENGTH; i++)
 {
-random = rand() % (90 - 65) + 65;
-current_sum += random;
-password[i] = (char)random;
+char random = (char)(rand() % 26 + 'A');
+password[i] = random;
 }
-password[PASSWORD_LENGTH - 1] = KEY_SUM - current_sum;
-password[PASSWORD_LENGTH] = '\0'; 
-printf("%s", password);
-return (0);
+password[PASSWORD_LENGTH] = '\0';
+printf("Tada! Congrats\n");
+printf("(%d chars long)\n", PASSWORD_LENGTH);
+printf("%s\n", password);
+return 0;
 }
