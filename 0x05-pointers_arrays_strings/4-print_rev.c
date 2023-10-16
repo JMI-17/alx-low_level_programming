@@ -17,9 +17,9 @@ putchar(s[i]);
 }
 putchar('\n');
 }
-int main(viod)
+int main()
 {
 char str[] = "Hello, World!";
 print_rev(str);
-return (0);
+return 0;
 }
