@@ -6,9 +6,10 @@
 int main(void)
 {
 int i;
-int random, current_sum;
-srand(time(0));
+int random;
+int current_sum;
 char password[PASSWORD_LENGTH + 1];
+srand(time(0));
 for (i = 0, current_sum = 0; i < PASSWORD_LENGTH - 1; i++)
 {
 random = rand() % (90 - 65) + 65;
@@ -16,7 +17,7 @@ current_sum += random;
 password[i] = (char)random;
 }
 password[PASSWORD_LENGTH - 1] = KEY_SUM - current_sum;
-password[PASSWORD_LENGTH] = '\0';
+password[PASSWORD_LENGTH] = '\0'; 
 printf("%s", password);
 return (0);
 }
