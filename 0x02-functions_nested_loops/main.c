@@ -1,18 +1,17 @@
+#include <limits.h>
 #include "main.h"
 
 /**
- * main - Entry point of the program
+ * main - check the code for Holberton School students.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-    _putchar('H');  /* Print 'H' */
-    _putchar('e');  /* Print 'e' */
-    _putchar('l');  /* Print 'l' */
-    _putchar('l');  /* Print 'l' */
-    _putchar('o');  /* Print 'o' */
-    _putchar('\n'); /* Print a newline character */
+	int r;
 
-    return (0);
+	r = print_last_digit(INT_MIN);
+	_putchar('0' + r);
+	_putchar('\n');
+	return (0);
 }
