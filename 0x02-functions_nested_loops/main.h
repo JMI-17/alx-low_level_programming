@@ -13,4 +13,5 @@ int print_last_digit(int);
 void print_number(int);
 void print_alphabet(void);
 void print_alphabet_x10(void);
+void times_table(void);
 #endif
