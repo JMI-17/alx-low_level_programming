@@ -17,5 +17,5 @@ else
 last_digit = (long)n % 10;
 }
 _putchar(last_digit + '0');
-return (int last_digit);
+return (last_digit);
 }
