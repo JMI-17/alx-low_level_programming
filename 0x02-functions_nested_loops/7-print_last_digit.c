@@ -1,20 +1,21 @@
 #include "main.h"
 /**
- * main - Entry point
- *
- * Description: This is the main function that serves as the entry point
- * for the program. It calls the `print_last_digit` function to print and
- * return the last digit of an integer.
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+* print_last_digit - Print and return the last digit of a number
+* @n: The number to extract the last digit from
+*
+* Return: The value of the last digit
+*/
+int print_last_digit(int n)
 {
-    int n = 98;
-    int last_digit;
-
-    last_digit = print_last_digit(n);
-    _putchar('\n');
-
-    return (0);
+int last_digit;
+if (n < 0)
+{
+last_digit = -n % 10;
+}
+else
+{
+last_digit = n % 10;
+}
+_putchar(last_digit + '0');
+return (ast_digit);
 }
