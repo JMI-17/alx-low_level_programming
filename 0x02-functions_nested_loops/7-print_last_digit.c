@@ -17,5 +17,5 @@ else
 last_digit = n % 10;
 }
 _putchar(last_digit + '0');
-return (ast_digit);
+return (last_digit);
 }
