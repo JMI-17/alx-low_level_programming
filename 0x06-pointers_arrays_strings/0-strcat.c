@@ -8,7 +8,7 @@
 */
 char *_strcat(char *dest, char *src)
 {
-char *result = dest; // Save the starting address of dest
+char *result = dest;
 while (*dest != '\0')
 dest++;
 while (*src != '\0')
