@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <stddef.h>
+int _putchar(char c);
 char *leet(char *str);
 size_t custom_strlen(const char *str);
 char *_strcat(char *dest, char *src);
