@@ -1,8 +1,10 @@
 #include "main.h"
 /**
-* _strncat -
-* Concatenates two strings, using at most n bytes from src
-* @dest: The destination string to which src will be appended
+*
+* Concatenates two strings, using at most
+* n bytes from src
+* @dest: The destination string to which
+* src will be appended
 * @src: The source string to be appended to dest
 * @n: The maximum number of bytes to copy from src
 *

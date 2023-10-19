@@ -20,4 +20,3 @@ src++;
 *dest = '\0';
 return result;
 }
-
