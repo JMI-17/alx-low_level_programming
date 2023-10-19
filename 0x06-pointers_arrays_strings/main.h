@@ -1,5 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stddef.h>
+size_t custom_strlen(const char *str);
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
@@ -7,4 +9,7 @@ int _strcmp(char *s1, char *s2);
 void reverse_array(int *a, int n);
 char *string_toupper(char *str);
 char *cap_string(char *);
+char *string_toupper(char *);
+size_t custom_strlen(const char *str);
+char *custom_strcpy(char *dest, const char *src);
 #endif /* MAIN_H */
