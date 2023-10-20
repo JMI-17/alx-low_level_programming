@@ -1,9 +1,8 @@
-#include "main.h"
+#include "main."
 /**
-* Concatenates two strings, using at most
-* n bytes from src
-* @dest: The destination string to which
-* src will be appended
+* _strncat - Concatenates two strings, using at most n bytes from src
+*
+* @dest: The destination string to which src will be appended
 * @src: The source string to be appended to dest
 * @n: The maximum number of bytes to copy from src
 *
