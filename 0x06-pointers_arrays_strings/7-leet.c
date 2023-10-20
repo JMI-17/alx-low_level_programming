@@ -14,7 +14,7 @@ for (i = 0; str[i] != '\0'; i++)
 {
 for (j = 0; leet_map[j] != '\0'; j++)
 {
-if (str[i] == leet_map[j])
+if (str[i] == leet_map[j] || (isalpha(str[i]) && tolower((unsigned char)str[i]) == leet_map[j]))
 {
 str[i] = leet_replacement[j];
 break;
