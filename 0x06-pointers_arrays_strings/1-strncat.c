@@ -1,6 +1,6 @@
 #include "main."
 /**
-* _strncat - Concatenates two strings, using at most n bytes from src
+* _strncat-Concatenates two strings, using at most n bytes from src
 *
 * @dest: The destination string to which src will be appended
 * @src: The source string to be appended to dest
