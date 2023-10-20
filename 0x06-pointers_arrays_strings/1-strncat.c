@@ -1,6 +1,5 @@
 #include "main.h"
 /**
-*
 * Concatenates two strings, using at most
 * n bytes from src
 * @dest: The destination string to which
