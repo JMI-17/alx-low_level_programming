@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* calculate_sqrt - Helper function to calculate the square root using recursion.
+* calculate_sqrt - Helper function to calculate the square
+* root using recursion.
 * @n: The number for which to calculate the square root.
 * @x: The current approximation of the square root.
 *
@@ -17,11 +18,11 @@ int calculate_sqrt(int n, int x)
 {
 if (x * x == n)
 {
-return x;
+return (x);
 }
 else if (x * x > n)
 {
-return -1;
+return (-1);
 }
 else
 {
@@ -32,11 +33,11 @@ int _sqrt_recursion(int n)
 {
 if (n < 0)
 {
-return -1; /* Square root of a negative number is undefined. */
+return (-1);
 }
 else if (n == 0 || n == 1)
 {
-return n;
+return (n);
 }
 else
 {
