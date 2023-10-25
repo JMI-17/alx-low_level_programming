@@ -4,7 +4,7 @@
 * factorial - Calculate the factorial of a number.
 * @n: The number for which to calculate the factorial.
 *
-* Return: The factorial of n. 
+* Return: The factorial of n.
 * If n is negative, return -1 to indicate an error.
 * Factorial of 0 is 1.
 */
