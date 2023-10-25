@@ -5,6 +5,7 @@
 * root using recursion.
 * @n: The number for which to calculate the square root.
 * @x: The current approximation of the square root.
+* _sqrt_recursion - Helper function to calculate the square
 * Return: The natural square root of n.
 */
 int calculate_sqrt(int n, int x)
