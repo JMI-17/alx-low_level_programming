@@ -2,7 +2,7 @@
 #include <string.h>
 #include "main.h"
 /**
-* is_palindrome - Checks if a string is a palindrome.
+* is_palindrome_recursive - Checks if a string is a palindrome.
 * @s: The input string to check.
 * @left: The left index of the current substring.
 * @right: The right index of the current substring.
