@@ -4,7 +4,8 @@
 /**
 * is_palindrome - Checks if a string is a palindrome.
 * @s: The input string to check.
-*
+* @left: The left index of the current substring.
+* @right: The right index of the current substring.
 * Return: 1 if the string is a palindrome, 0 if not.
 */
 int is_palindrome_recursive(char *s, int left, int right)
