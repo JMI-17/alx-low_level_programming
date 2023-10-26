@@ -3,7 +3,6 @@
 #include "main.h"
 /**
 * is_palindrome_recursive - Checks if a string is a recursive.
-* is_palindrome - Checks if a string is a palindrome.
 * @s: The input string to check.
 * @left: The left index of the current substring.
 * @right: The right index of the current substring.
@@ -21,6 +20,12 @@ return (0);
 }
 return (is_palindrome_recursive(s, left + 1, right - 1));
 }
+/**
+ * is_palindrome - Check if a string is a palindrome.
+ * @s: The string to check.
+ *
+ * Return: 1 if it's a palindrome, 0 otherwise.
+ */
 int is_palindrome(char *s)
 {
 int length = strlen(s);
