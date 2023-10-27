@@ -1,42 +1,30 @@
-0x09. C - Static libraries
-
+# 0x09. C - Static libraries
 
 A "C library," often referred to as a C standard library, is a collection of pre-compiled functions and routines written in the C programming language. These libraries provide a set of essential functions that can be used by C programs to perform common tasks. These libraries typically include functions for file input/output, memory management, string manipulation, math operations, and more.
 
 
+# Here are some key points about C libraries and their purposes:
 
+- Standardization: C libraries are standardized and come with most C compilers, making them highly portable across different platforms and operating systems. This standardization ensures that C code can be written once and run on various systems without modification.
+- Reusability: C libraries promote code reuse. Instead of rewriting common functions from scratch, developers can use these pre-built functions, saving time and effort.
+- Efficiency: C libraries are often optimized for performance and efficiency, as they are usually written in C itself. This means that applications that use these libraries can benefit from high-performance code.
+- Abstraction: Libraries provide an abstraction layer, allowing developers to perform complex tasks without needing to understand the low-level details of how those tasks are implemented.
+- Consistency: C libraries ensure consistent behavior and adherence to C language standards, reducing the likelihood of errors and bugs.
+- Focus on Application Logic: By using standard libraries, developers can focus more on the application's core logic and features rather than low-level system details.
 
-Here are some key points about C libraries and their purposes:
-
-Standardization: C libraries are standardized and come with most C compilers, making them highly portable across different platforms and operating systems. This standardization ensures that C code can be written once and run on various systems without modification.
-
-Reusability: C libraries promote code reuse. Instead of rewriting common functions from scratch, developers can use these pre-built functions, saving time and effort.
-
-Efficiency: C libraries are often optimized for performance and efficiency, as they are usually written in C itself. This means that applications that use these libraries can benefit from high-performance code.
-
-Abstraction: Libraries provide an abstraction layer, allowing developers to perform complex tasks without needing to understand the low-level details of how those tasks are implemented.
-
-Consistency: C libraries ensure consistent behavior and adherence to C language standards, reducing the likelihood of errors and bugs.
-
-Focus on Application Logic: By using standard libraries, developers can focus more on the application's core logic and features rather than low-level system details.
-
-
-Static libraries and dynamic libraries are two ways of organizing and sharing code in software development, and they involve different mechanisms for linking code into an executable.
+### Static libraries and dynamic libraries are two ways of organizing and sharing code in software development, and they involve different mechanisms for linking code into an executable.
 
 1. Static Libraries:
-
-Compilation: Static libraries are also known as "archives." They are created by compiling source code files (e.g., .c files) into object files (e.g., .o files) and then bundling those object files into a single archive file (e.g., .a on Unix-like systems). The archive is created at compile time.
-Linking: When you build an executable, the linker takes the entire code from the static library and links it directly into the executable. This means that the code from the library is physically part of the resulting binary file.
-Pros:
+- Compilation: Static libraries are also known as "archives." They are created by compiling source code files (e.g., .c files) into object files (e.g., .o files) and then bundling those object files into a single archive file (e.g., .a on Unix-like systems). The archive is created at compile time.
+- Linking: When you build an executable, the linker takes the entire code from the static library and links it directly into the executable. This means that the code from the library is physically part of the resulting binary file.
+- Pros:
 Portability: The resulting executable is self-contained and can be easily moved between systems.
 Deterministic: The behavior of the program is predictable, as it relies on a known version of the library.
-Cons:
+- Cons:
 Larger Executables: Each program that uses the library has its own copy of the library code, potentially leading to larger executable files.
 Inflexible: Updates to the library require recompilation of the program.
 
-
 2. Dynamic Libraries:
-
 Compilation: Dynamic libraries are also known as "shared libraries." They are compiled into a separate binary file (e.g., .so on Unix-like systems) during the library's build process. The library file is loaded into memory at runtime.
 Linking: When you build an executable, it links to the dynamic library but does not include the library's code in the executable. Instead, the code is loaded into memory when the program runs.
 Pros:
