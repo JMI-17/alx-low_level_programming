@@ -23,6 +23,13 @@ else
 return (calculate_sqrt(n, x + 1));
 }
 }
+/**
+* _sqrt_recursion - Helper function to calculate the square
+* @n: The number for which to calculate the square root.
+* @x: The current approximation of the square root.
+*
+* Return: The natural square root of n.
+*/
 int _sqrt_recursion(int n)
 {
 if (n < 0)
