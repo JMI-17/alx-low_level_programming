@@ -7,7 +7,7 @@
 *
 * Return: 0 (Success)
 */
-int main(int argc, char **argv[])
+int args_count(int argc)
 {
 printf("%d\n", argc - 1);
 return (0);
