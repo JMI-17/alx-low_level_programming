@@ -3,5 +3,5 @@
 int _putchar(char c);
 int main(int argc, char *argv[]);
 int _atoi(char *s);
-int is_positive_number(const char *str);
+int is_positive_number(char *str);
 #endif /* PRINT_NAME_H */
