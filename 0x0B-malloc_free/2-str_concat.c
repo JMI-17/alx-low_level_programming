@@ -6,7 +6,8 @@
 * @s1: The first string
 * @s2: The second string
 *
-* Return: A pointer to the newly allocated concatenated string, or NULL on failure
+* Return: A pointer to the newly allocated concatenated string,
+* or NULL on failure
 */
 char *str_concat(char *s1, char *s2)
 {
@@ -27,7 +28,6 @@ for (i = 0; i < len1; i++)
 concatenated[i] = s1[i];
 for (j = 0; j < len2; j++)
 concatenated[i + j] = s2[j];
-
 concatenated[i + j] = '\0';
 return (concatenated);
 }
