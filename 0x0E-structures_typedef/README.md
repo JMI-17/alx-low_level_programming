@@ -1,3 +1,5 @@
+0x0E. C - Structures, typedef
+
 What are structures
 
 In C programming, structures (structs) are composite data types that allow you to group together variables of different data types under a single name. Each variable in a structure is known as a "member" or "field." Structures are particularly useful for organizing related data and creating custom data types.
