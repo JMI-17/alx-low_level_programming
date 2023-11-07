@@ -3,6 +3,11 @@
 /**
 * print_dog - Prints information about a dog
 * @d: Pointer to a struct dog
+*
+* Description: This function prints the name, age, and owner of a dog.
+*              If the dog's name or owner is NULL, it prints "(nil)".
+*
+* Return: No return value (void)
 */
 void print_dog(struct dog *d)
 {
