@@ -1,5 +1,5 @@
 # Basic C Programming Task and lectures
-## Here i tried to learn basic knowledgr about C Programming
+## Here i tried to learn basic knowledge about C Programming
 - Why C programming is awesome
 - Who invented C
 - Who are Dennis Ritchie, Brian Kernighan and Linus Torvalds
