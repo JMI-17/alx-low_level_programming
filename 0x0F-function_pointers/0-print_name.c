@@ -2,6 +2,7 @@
 #include "function_pointers.h"
 #include <stddef.h>
 /**
+* prime_number - Check if an integer is a prime number.
 * Prints a name to the console using the function `f`.
 *
 * @param name: A pointer to the name to be printed.
