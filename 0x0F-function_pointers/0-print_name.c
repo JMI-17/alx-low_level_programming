@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include "function_pointers.h"
 /**
-* prime_number - Check if an integer is a prime number.
-* Prints a name to the console using the function `f`.
-*
-* @param name: A pointer to the name to be printed.
-* @param f: A pointer to a function that prints a character.
-*/
+ * print_name - prints a name.
+ * @name: the name to be printed.
+ * @f: function pointer of the function that prints name.
+ *
+ * Return: nothing.
+ */
 void print_name(char *name, void (*f)(char *))
 {
 if (name == NULL)
