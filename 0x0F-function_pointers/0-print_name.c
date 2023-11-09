@@ -9,13 +9,8 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-if (name == NULL)
-{
+if (f == NULL || name == NULL)
 return;
-}
-while (*name != '\0')
-{
-f(name);
-name++;
-}
+
+(*f)(name);
 }

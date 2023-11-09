@@ -2,15 +2,14 @@
 #include <stdio.h>
 #include <stddef.h>
 /**
-* Description: function that searches for an integer.
-* @int_index  - name of the fucntion.
+* int_index - searches for an integer
+* @array: the array of integers to be searched
+* @size: size of the array
+* @cmp: pointer to the function to be used
 *
-* @array: The array to search in.
-* @size: The size of the array.
-* @cmp: A function to compare values.
-*
-* return - The index of the first element for which the cmp function does not return 0,
-* or -1 if no element matches or size <= 0.
+* Return: the index of the first element for which the cmp function
+*         does not return 0,
+*      OR -1 if  no element matches or size <= 0.
 */
 int int_index(int *array, int size, int (*cmp)(int))
 {
