@@ -4,13 +4,12 @@
 #include <stddef.h>
 
 /* Structure for a singly linked list node */
-struct list_s {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
-};
-
-typedef struct list_s list_t;
+typedef struct list_s
+{
+	char *str;
+	unsigned int len;
+	struct list_s *next;
+} list_t;
 
 /* Function prototype to print all elements of a linked list */
 size_t print_list(const list_t *h);
@@ -23,4 +22,3 @@ void free_list(list_t *head);
 int _putchar(char c);
 
 #endif /* LISTS_H */
-
