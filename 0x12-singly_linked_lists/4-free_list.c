@@ -7,12 +7,14 @@
 * Description: This function frees each node of the linked list,
 *              including the strings within each node.
 */
-void free_list(list_t *head) {
+void free_list(list_t *head)
+{
 list_t *temp;
-while (head != NULL) {
+while (head != NULL)
+{
 temp = head;
 head = head->next;
-free(temp->str);  /* Free the string in the current node */
-free(temp);       /* Free the current node */
+free(temp->str);
+free(temp);
 }
 }
